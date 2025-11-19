@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Truman's Clothing — Home</title>
+  <meta name="description" content="Truman's Clothing — curated fashion, magazine style presentation. Student project." />
+  <!-- Fonts: use system fonts-->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">Truman's Clothing</div>
+      <button class="mobile-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index2.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main">
+    <!-- Hero / Editorial banner -->
+    <section class="hero card hero-editorial">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="eyebrow">Editorial — New Season</h1>
+          <h2 class="hero-title">Truman's Clothing</h2>
+          <p class="lead">A curated selection of modern essentials — designed for everyday style and editorial stories.</p>
+          <p class="actions">
+            <a href="products.html" class="btn btn-outline">View Collection</a>
+            <a href="enquiry.html" class="btn" style="margin-left:0.6rem;">Bulk Enquiry</a>
+          </p>
+          <p class="field-help">Today's date: <span id="date"></span></p>
+        </div>
+
+        <div class="hero-media">
+          <img class="responsive-img lightbox-img" 
+               src="TC.png"
+               alt="Editorial hero image — Truman's Clothing">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured grid (catalogue-like) -->
+    <section class="card mt-1">
+      <h3 class="section-heading">Featured Pieces</h3>
+      <input id="search-products" placeholder="Search the edit..." aria-label="Search products" class="search-input">
+      <section class="grid-cards" aria-live="polite">
+        <article class="card product">
+          <h4 class="product-title">Truman Oversized Coat</h4>
+          <img class="responsive-img lightbox-img" alt="Oversized coat" 
+               src="oversizedcoat.png"
+               srcset="oversizedcoat.png"
+               sizes="(max-width:600px) 100vw, 33vw">
+          <p class="meta">Minimal tailoring — ZAR 1299</p>
+        </article>
+
+        <article class="card product">
+          <h4 class="product-title">Silk Blouse</h4>
+          <img class="responsive-img lightbox-img" alt="Silk blouse" 
+               src="silkblouse.png">
+          <p class="meta">Lightweight silk — ZAR 699</p>
+        </article>
+
+        <article class="card product">
+          <h4 class="product-title">High-Waist Trousers</h4>
+          <img class="responsive-img lightbox-img" alt="Trousers" 
+               src="highwaisttrousers.png">
+          <p class="meta">Structured silhouette — ZAR 599</p>
+        </article>
+      </section>
+    </section>
+
+    <!-- Short about CTA -->
+    <section class="card mt-1">
+      <h3 class="section-heading">Our Approach</h3>
+      <p class="field-help">Truman's Clothing presents small seasonal edits with quality materials and editorial styling. For full collections and bulk quotes, use the enquiry page.</p>
+      <p><a class="btn btn-outline" href="about.html">Read More</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© Truman's Clothing </p>
+    </div>
+  </footer>
+</body>
+</html>

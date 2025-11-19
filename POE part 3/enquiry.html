@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiry — Truman's Clothing</title>
+  <meta name="description" content="Get an estimate or ask about bulk orders at Truman's Clothing." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="logo">Truman's Clothing</div>
+      <button class="mobile-toggle" aria-controls="main-nav" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="main-nav" role="navigation">
+        <a href="index2.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="card">
+      <h1 class="hero-title">Enquiry</h1>
+      <p class="field-help">Request a basic estimate. This simulates a student demo response.</p>
+
+      <form id="enquiry-form" novalidate>
+        <div class="form-row">
+          <label for="enquiry-service">Select Service</label>
+          <select id="enquiry-service" data-required="true">
+            <option value="">Choose</option>
+            <option>Custom T-Shirts (Printing)</option>
+            <option>Bulk Hoodies</option>
+            <option>Uniforms (Workshops)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="enquiry-qty">Quantity</label>
+          <input id="enquiry-qty" type="number" min="1" value="1" data-required="true">
+        </div>
+
+        <div class="form-row">
+          <button class="btn" type="submit">Get Estimate</button>
+        </div>
+
+        <div id="enquiry-result" class="mt-1" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© Truman's Clothing </p>
+    </div>
+  </footer>
+</body>
+</html>
